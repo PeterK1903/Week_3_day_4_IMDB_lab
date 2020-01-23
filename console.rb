@@ -9,17 +9,19 @@ Casting.delete_all
 
 movie1 = Movie.new({'title' => 'Exit Wounds', 'genre' => 'Action'})
 movie1.save()
-movie1.genre = "Gang$ta"
-movie1.update
+# movie1.genre = "Gang$ta"
+# movie1.update
 
-# movie2 = Movie.new({'title' => 'RoboCop', 'genre' => 'Grindhouse'})
+movie2 = Movie.new({'title' => 'RoboCop', 'genre' => 'Grindhouse'})
+movie2.save()
 # movie3 = Movie.new({'title' => 'Frozen', 'genre' => 'Comedy Musical'})
 #
 star1 = Star.new({'first_name' => 'Earl', 'last_name' => 'Simmons'})
 star1.save()
 star1.first_name = 'DMX'
-star1.update()
-# star2 = Star.new({'first_name' => 'Steven', 'last_name' => 'Seagal'})
+# star1.update()
+star2 = Star.new({'first_name' => 'Steven', 'last_name' => 'Seagal'})
+star2.save
 # star3 = Star.new({'first_name' => 'Josh', 'last_name' => 'Gad'})
 #
 casting1 = Casting.new({'movie_id' => movie1.id, 'star_id' => star1.id, 'fee' => '10000'})
